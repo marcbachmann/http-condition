@@ -1,0 +1,15 @@
+{
+  "name": "http-condition",
+  "version": "1.0.0",
+  "description": "Support conditions for http requests based on a simple dsl.",
+  "main": "index.js",
+  "keywords": ["http", "condition", "request", "routing"],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Marc Bachmann <marc.brookman@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "boolean-expression": "^2.0.0"
+  }
+}
