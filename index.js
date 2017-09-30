@@ -1,3 +1,5 @@
+const booleanExpression = require('boolean-expression')
+
 module.exports = httpCondition
 
 function httpCondition (patterns, values) {
@@ -14,7 +16,6 @@ function toFunction (conditions, values) {
 
 function conditionToStatement (values, condition, i) {
   if (values && !Array.isArray(values)) throw new Error('The second argument must be an array')
-  const booleanExpression = require('boolean-expression')
   if (!condition) return `return ${i}`
   const statement = booleanExpression(condition).toString(mapToken)
   if (!statement) throw new Error('Condition is empty')
