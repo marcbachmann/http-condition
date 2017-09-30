@@ -1,6 +1,6 @@
 {
   "name": "http-condition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Support conditions for http requests based on a simple dsl.",
   "main": "index.js",
   "keywords": [
