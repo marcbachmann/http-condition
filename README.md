@@ -1,7 +1,7 @@
 # http-condition
 
 Support conditions for http requests based on a simple dsl.
-This is an attempt on simplifying some configurations/middlewares in a frontend app.
+This is an attempt on simplifying some configurations/middlewares in a node server.
 
 ```js
 const httpCondition = require('http-condition')
@@ -17,10 +17,10 @@ function (req, res, next) {
 ```
 
 Currently supported directives:
-- 'accept'
+- 'accept' (only does string matching, no parsing & priorization)
 - 'url'
 - 'user-agent'
-- 'accept-language'
+- 'accept-language' (only does string matching, no parsing & priorization)
 
 Selectors:  
 pattern: {{directive}}{{operator}}:{{value}}
@@ -39,7 +39,6 @@ const languages = [
     ['url^:/en OR accept-language:en', {content: 'English content'}]
 ]
 
-const patterns = languages.map((l) => `url^:/${l}`)
 const getLanguage = httpCondition(_.map(languages, 0), _.map(languages, 1))
 
 function (req, res, next) {
