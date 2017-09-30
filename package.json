@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Support conditions for http requests based on a simple dsl.",
   "main": "index.js",
-  "keywords": ["http", "condition", "request", "routing"],
+  "keywords": [
+    "http",
+    "condition",
+    "request",
+    "routing"
+  ],
   "scripts": {
     "test": "node test.js"
   },
@@ -11,5 +16,14 @@
   "license": "ISC",
   "dependencies": {
     "boolean-expression": "^2.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcbachmann/http-condition.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcbachmann/http-condition/issues"
+  },
+  "homepage": "https://github.com/marcbachmann/http-condition#readme"
 }
