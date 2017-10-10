@@ -13,7 +13,7 @@
     "test": "node test.js"
   },
   "author": "Marc Bachmann <marc.brookman@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "boolean-expression": "^2.0.0"
   },
